@@ -25,27 +25,18 @@ public class Main {
     }
 
     public static Boolean check15(Integer number) {
-        if (number % 15 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        Boolean result = number % 15 == 0 ? true : false;
+        return result;
     }
 
     public static Boolean check3(Integer number) {
-        if (number % 3 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        Boolean result = number % 3 == 0 ? true : false;
+        return result;
     }
 
     public static Boolean check5(Integer number) {
-        if(number % 5 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        Boolean result = number % 5 == 0 ? true : false;
+        return result;
     }
 }
 
