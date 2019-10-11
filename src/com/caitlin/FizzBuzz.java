@@ -2,7 +2,7 @@ package com.caitlin;
 
 import com.sun.org.apache.xpath.internal.operations.Bool;
 
-public class Main {
+public class FizzBuzz {
 
     public static void main(String[] args) {
         System.out.println("Hello World");
@@ -12,15 +12,15 @@ public class Main {
         play(30);
     }
 
-    public static void play(Integer number) {
+    public static String play(Integer number) {
         if (check15(number)) {
-            System.out.println("FizzBuzz");
+            return "FizzBuzz";
         } else if (check3(number))  {
-             System.out.println("Fizz");
+             return "Fizz";
          } else if (check5(number)) {
-            System.out.println("Buzz");
+            return"Buzz";
         } else {
-            System.out.println(number);
+            return String.valueOf(number);
         }
     }
 
