@@ -14,5 +14,10 @@ public class FizzBuzzTest {
         assertEquals("7", result);
     }
 
-
+    @Test
+    public void play_whenPassedNumber15_returnsFizzBuzz() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.play(15);
+        assertEquals("FizzBuzz", result);
+    }
 }
