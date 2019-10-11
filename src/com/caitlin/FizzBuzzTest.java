@@ -26,4 +26,16 @@ public class FizzBuzzTest {
         String result = fizzBuzz.play(15);
         assertEquals("FizzBuzz", result);
     }
+
+    @Test
+    public void play_whenPassedNumber3_returnsFizz() {
+        String result = fizzBuzz.play(3);
+        assertEquals("Fizz", result);
+    }
+
+    @Test
+    public void play_whenPassedNumber5_returnsBuzz() {
+        String result = fizzBuzz.play(5);
+        assertEquals("Buzz", result);
+    }
 }
